@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: trabajadores
+  datasource:
+    url: jdbc:mysql://${trabajadores-db:localhost}:${production-port:3307}/trabajadores
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
