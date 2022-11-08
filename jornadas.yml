@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: jornadas
+  datasource:
+    url: jdbc:mysql://${jornadas-db:localhost}:${production-port:3308}/jornadas
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
