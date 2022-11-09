@@ -42,5 +42,5 @@ resilience4j:
         timeout-duration: 2s
         cancel-running-future: true
       instances:
-        example:
+        jornadas:
           base-config: shared
