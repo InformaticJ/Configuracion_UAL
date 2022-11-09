@@ -36,3 +36,11 @@ resilience4j:
     instances:
       jornadas:
         base-config: shared
+    timelimiter:
+      configs:
+        shared:
+        timeout-duration: 2s
+        cancel-running-future: true
+      instances:
+        example:
+          base-config: shared
