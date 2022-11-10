@@ -1,5 +1,5 @@
 server:
-  port: 8084
+  port: 8080
 
 spring:
   config:
@@ -14,9 +14,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
+
 
 resilience4j:
   circuitbreaker:
