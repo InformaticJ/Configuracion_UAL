@@ -11,7 +11,7 @@ spring:
       mongodb:
         host: localhost
         database: vestuarios
-        user: root
+        user: user
         password: password
         port: 27017
     jpa:
