@@ -2,9 +2,6 @@ server:
   port: 8082
 
 spring:
-  config:
-    activate:
-      on-profile: default
   application:
     name: vestuarios
     data:
@@ -14,9 +11,6 @@ spring:
         username: user
         password: password
         uri: mongodb://host:27017/vestuarios
-    jpa:
-      hibernate:
-        ddl-auto: update
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
