@@ -10,7 +10,7 @@ spring:
         database: vestuarios
         username: user
         password: password
-        uri: mongodb://host:27017/vestuarios
+        port: 27017
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
