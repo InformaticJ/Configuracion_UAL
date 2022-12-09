@@ -36,6 +36,12 @@ resilience4j:
     instances:
       jornadas:
         base-config: shared
+      vestuarios:
+        base-config: shared
+      equipos:
+        base-config: shared
+      viajes:
+        base-config: shared
     timelimiter:
       configs:
         shared:
@@ -43,4 +49,10 @@ resilience4j:
         cancel-running-future: true
       instances:
         jornadas:
+          base-config: shared
+        vestuarios:
+          base-config: shared
+        equipos:
+          base-config: shared
+        viajes:
           base-config: shared
