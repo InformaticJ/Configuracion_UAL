@@ -17,6 +17,9 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max_file-size: 5MB
 
 resilience4j:
   circuitbreaker:
