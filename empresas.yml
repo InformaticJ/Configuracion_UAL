@@ -1,0 +1,23 @@
+server:
+  port: 8085
+
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: empresas
+  datasource:
+    url: jdbc:mysql://${empresas-db:localhost}:${production-port:3307}/empresas
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 5MB
