@@ -46,6 +46,8 @@ resilience4j:
         base-config: shared
       viajes:
         base-config: shared
+      empresas:
+        base-config: shared
     timelimiter:
       configs:
         shared:
@@ -59,4 +61,6 @@ resilience4j:
         equipos:
           base-config: shared
         viajes:
+          base-config: shared
+        empresas:
           base-config: shared
