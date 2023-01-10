@@ -39,6 +39,10 @@ spring:
       instances:
         trabajadores:
           base-config: shared
+        equipos:
+          base-config: shared
+        vestuarios:
+          base-config: shared
       timelimiter:
         configs:
           shared:
@@ -46,4 +50,8 @@ spring:
           cancel-running-future: true
         instances:
           trabajadores:
+            base-config: shared
+          equipos:
+            base-config: shared
+          vestuarios:
             base-config: shared
