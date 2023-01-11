@@ -1,0 +1,18 @@
+server:
+  port: 8087
+spring:
+  config:
+    activate:
+      on-profile: default
+  application:
+    name: vacacionesAceptadas
+  datasource:
+    url: jdbc:mysql://${vacacionesAceptadas-db:localhost}:${production-port:3312}/vacacionesAceptadas
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
