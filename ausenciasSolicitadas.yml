@@ -7,7 +7,7 @@ spring:
   application:
     name: ausenciasSolicitadas
   datasource:
-    url: jdbc:mysql://${ausencias-solicitadas-db:localhost}:${production-port:3311}/ausencias-solicitadas
+    url: jdbc:mysql://${ausencias-solicitadas-db:localhost}:${production-port:3311}/ausenciasSolicitadas
     username: root
     password: password
   jpa:
