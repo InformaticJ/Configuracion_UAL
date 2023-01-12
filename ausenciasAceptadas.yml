@@ -1,13 +1,13 @@
 server:
-  port: 8086
+  port: 8087
 spring:
   config:
     activate:
       on-profile: default
   application:
-    name: vacacionesSolicitadas
+    name: ausenciasAceptadas
   datasource:
-    url: jdbc:mysql://${vacacionesSolicitadas-db:localhost}:${production-port:3311}/vacacionesSolicitadas
+    url: jdbc:mysql://${ausenciasAceptadas-db:localhost}:${production-port:3312}/ausenciasAceptadas
     username: root
     password: password
   jpa:
@@ -16,4 +16,3 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-
