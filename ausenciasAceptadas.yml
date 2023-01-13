@@ -5,7 +5,7 @@ spring:
     activate:
       on-profile: default
   application:
-    name: ausenciasaceptadas
+    name: ausenciasAceptadas
   datasource:
     url: jdbc:mysql://${ausencias-aceptadas-db:localhost}:${production-port:3312}/ausenciasAceptadas
     username: root
