@@ -5,9 +5,9 @@ spring:
     activate:
       on-profile: default
   application:
-    name: ausenciasAceptadas
+    name: ausenciasaceptadas
   datasource:
-    url: jdbc:mysql://${ausenciasAceptadas-db:localhost}:${production-port:3312}/ausenciasAceptadas
+    url: jdbc:mysql://${ausencias-aceptadas-db:localhost}:${production-port:3312}/ausenciasAceptadas
     username: root
     password: password
   jpa:
@@ -32,7 +32,7 @@ spring:
           writable-stack-trace-enabled: true
           automatic-transition-from-open-to-half-open-enabled: true
       instances:
-        ausenciasSolicitadas:
+        ausenciassolicitadas:
           base-config: shared
       timelimiter:
         configs:
@@ -40,5 +40,5 @@ spring:
           timeout-duration: 2s
           cancel-running-future: true
         instances:
-          ausenciasSolicitadas:
+          ausenciassolicitadas:
             base-config: shared
