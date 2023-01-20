@@ -16,6 +16,7 @@ spring:
       on-profile: default
   application:
     name: viajes
+    zipkin: http://zipkin:9411
   datasource:
     url: jdbc:mysql://${viajes-db:localhost}:${production-port:3309}/viajes
     username: root

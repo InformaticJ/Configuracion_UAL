@@ -13,6 +13,7 @@ eureka:
 spring:
   application:
     name: vestuarios
+    zipkin: http://zipkin:9411
     data:
       mongodb:
         host: localhost

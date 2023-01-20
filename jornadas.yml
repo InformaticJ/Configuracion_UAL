@@ -16,6 +16,7 @@ spring:
       on-profile: default
   application:
     name: jornadas
+    zipkin: http://zipkin:9411
   datasource:
     url: jdbc:mysql://${jornadas-db:localhost}:${production-port:3308}/jornadas
     username: root

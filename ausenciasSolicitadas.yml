@@ -16,6 +16,7 @@ spring:
       on-profile: default
   application:
     name: ausenciasSolicitadas
+    zipkin: http://zipkin:9411
   datasource:
     url: jdbc:mysql://${ausencias-solicitadas-db:localhost}:${production-port:3311}/ausenciasSolicitadas
     username: root
