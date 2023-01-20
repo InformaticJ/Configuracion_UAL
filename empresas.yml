@@ -16,6 +16,7 @@ spring:
       on-profile: default
   application:
     name: empresas
+    zipkin: http://zipkin:9411
   datasource:
     url: jdbc:mysql://${empresas-db:localhost}:${production-port:3310}/empresas
     username: root
