@@ -45,6 +45,8 @@ spring:
       instances:
         ausenciassolicitadas:
           base-config: shared
+        trabajadores:
+          base-config: shared
       timelimiter:
         configs:
           shared:
@@ -52,4 +54,6 @@ spring:
           cancel-running-future: true
         instances:
           ausenciassolicitadas:
+            base-config: shared
+          trabajadores:
             base-config: shared
