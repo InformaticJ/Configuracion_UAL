@@ -31,18 +31,7 @@ spring:
     multipart:
       max-file-size: 5MB
       max-request-size: 5MB
-  mail:
-    host: smtp.gmail.com
-    port: 587
-    protocol: smtp
-    username:
-    password:
-    properties:
-      mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
+
 
 resilience4j:
   circuitbreaker:
