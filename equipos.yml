@@ -18,8 +18,6 @@ spring:
    mongodb:
       host: localhost
       database: equipos
-      username: user
-      password: password
       port: 27017
   mvc:
     pathmatch:
