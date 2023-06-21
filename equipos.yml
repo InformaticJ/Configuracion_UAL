@@ -14,11 +14,13 @@ spring:
   application:
     name: equipos
     zipkin: http://zipkin:9411
-  data:
-   mongodb:
-      host: localhost
-      database: equipos
-      port: 27017
+    data:
+      mongodb:
+        host: localhost
+        database: equipos
+        username: user
+        password: password
+        port: 27017
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
