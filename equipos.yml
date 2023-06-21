@@ -14,7 +14,7 @@ spring:
   application:
     name: equipos
     zipkin: http://zipkin:9411
-data:
+  data:
     mongodb:
       host: localhost
       database: equipos
